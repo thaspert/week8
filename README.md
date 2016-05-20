@@ -17,3 +17,12 @@ The theme of tonight's class is *client-side magic*.
 
 
 ## Introduction to Javascript
+
+First, you should know that Javascript is a horrible language.  But, it currently provides an important
+substrate in every web application, so we should get familiar with it.
+
+More recent Javascript versions are called ES5, ES2015, ES6, and CoffeeScript.  They attempt to improve
+the language, with some success.
+
+We will learn some "raw" Javascript, though most web devs don't know much raw Javascript.  They use code libraries
+that provide a higher level of abstraction.  We will look at jQuery, the most popular of these.
