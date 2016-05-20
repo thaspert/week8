@@ -26,3 +26,5 @@ the language, with some success.
 
 We will learn some "raw" Javascript, though most web devs don't know much raw Javascript.  They use code libraries
 that provide a higher level of abstraction.  We will look at jQuery, the most popular of these.
+
+Go to http://localhost:3000/pages to start the Javascript tutorial for tonight.
