@@ -21,19 +21,21 @@
 </p>
 
 <p><a id="weather" href="http://www.wunderground.com/">Get Weather</a></p>
-
+<div id="weather_results"></div>
 
 <script type="text/javascript">
   api_key = "a65d37c3f4845b5e43e50756c1ed1240"
-  weather_url = "http://api.openweathermap.org/data/2.5/weather?q=London,UK&APIKEY=4ce6f502d38ddae567bf1702b05e168c&units=imperial"
+  // weather_url = "http://api.openweathermap.org/data/2.5/weather?q=Chicago,US&APIKEY=4ce6f502d38ddae567bf1702b05e168c&units=imperial"
 
   // weather_url = 'https://api.forecast.io/forecast/a65d37c3f4845b5e43e50756c1ed1240/41.9022,-87.6726'
+  weather_url = "/pages/weather"
 
   function getWeather() {
     $.ajax({
           url: weather_url,
           success: function(response) {
             console.log(response);
+            $("#weather_results").html("It is currently " + response["currently"]["temperature"] + " degrees.")
             // TO DO: Display the current temperature on the page
           }
         });
@@ -51,6 +53,7 @@
       type: 'GET',
       success: function(obj) {
         console.log(obj);
+        $("#movie_title").html(obj.title);
       }
     })
   }

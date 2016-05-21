@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :users
 
+  get '/pages/weather' => 'pages#weather'
   get '/pages(/:page)' => 'pages#show', as: :pages
 
   get '/login' => 'sessions#new'
