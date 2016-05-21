@@ -45,9 +45,10 @@ ActiveRecord::Schema.define(version: 0) do
   add_index "roles", ["movie_id"], name: "index_roles_on_movie_id"
 
   create_table "users", force: :cascade do |t|
-    t.text "name"
-    t.text "email"
-    t.text "password_digest"
+    t.text    "name"
+    t.text    "email"
+    t.text    "password_digest"
+    t.boolean "admin",           default: false
   end
 
 end

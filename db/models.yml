@@ -2,6 +2,7 @@ User
   name: text
   email: text
   password_digest: text
+  admin: boolean(false)
 
 Movie
   title: text
